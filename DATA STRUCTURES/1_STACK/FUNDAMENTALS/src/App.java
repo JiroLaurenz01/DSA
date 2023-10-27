@@ -3,14 +3,14 @@ import java.util.Stack;
 public class App {
     public static void main(String[] args) throws Exception {
         /*  STACK = "LIFO" DATA STRUCTURE, LAST-IN FIRST-OUT
-         *          STORES OBJECTS INTO A SORT OF "VERTICAL TOWER"   
-         *          push() TO ADD TO THE TOP
-         *          pop() TO REMOVE FROM THE TOP
-         *          
-         *  USES OF STACKS:
-         *          1. UNDO/REDO FEATURES IN TEXT EDITORS
-         *          2. MOVING BACK/FORWARD THROUGH BROWSER HISTORY
-         *          3. BACKTRACKING ALGORITHMS (MAZE, FILE DIRECTORIES)      
+                    STORES OBJECTS INTO A SORT OF "VERTICAL TOWER"   
+                    push() TO ADD TO THE TOP
+                    pop() TO REMOVE FROM THE TOP
+                    
+            USES OF STACKS:
+                    1. UNDO/REDO FEATURES IN TEXT EDITORS
+                    2. MOVING BACK/FORWARD THROUGH BROWSER HISTORY
+                    3. BACKTRACKING ALGORITHMS (MAZE, FILE DIRECTORIES)      
                     4. CALLING FUNCTIONS (CALL STACK)  */ 
         
         Stack<String> stack = new Stack<String>();
