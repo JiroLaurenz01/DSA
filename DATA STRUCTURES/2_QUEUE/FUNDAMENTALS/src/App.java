@@ -25,6 +25,15 @@ public class App {
 
         // Call the PrintQueue method to print the contents of the stack.
         PrintQueue(queue);
+
+        // Call the PollAndPrint method to pop the top element from the queue and print it.
+        PollAndPrint(queue);
+
+        // Call the PrintQueue method again to print the updated contents of the queue.
+        PrintQueue(queue);
+
+        // Call the PrintFirstElement method to print the first element of the queue without removing it.
+        PrintFirstElement(queue);
     }
 
     // Define the PrintQueue method to print the contents of the queue. It also checks if the queue is empty.
@@ -35,5 +44,16 @@ public class App {
             System.out.println(queue);
         else
             System.out.println("The queue is empty");
+    }
+
+    // Define the PollAndPrint method to pop the first element from the queue, store it in pollHolder, and then print it.
+    static void PollAndPrint(Queue<String> queue) {
+        String pollHolder = queue.poll();
+        System.out.println("\nThe popped string is " + pollHolder);
+    }
+
+    // Define the PrintFirstElement method to print the first element of the queue without removing it.
+    static void PrintFirstElement(Queue<String> queue) {
+        System.out.println("\nThe peeked string is " + queue.peek());
     }
 }
