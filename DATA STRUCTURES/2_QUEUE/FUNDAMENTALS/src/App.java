@@ -34,6 +34,12 @@ public class App {
 
         // Call the PrintFirstElement method to print the first element of the queue without removing it.
         PrintFirstElement(queue);
+
+        // Call the PrintQueueSize method to print the size of the queue.
+        PrintQueueSize(queue);
+
+        // Call the CheckIfContain method to check the queue if it contains the given object.
+        CheckIfCointain(queue, "Crossfir");
     }
 
     // Define the PrintQueue method to print the contents of the queue. It also checks if the queue is empty.
@@ -55,5 +61,18 @@ public class App {
     // Define the PrintFirstElement method to print the first element of the queue without removing it.
     static void PrintFirstElement(Queue<String> queue) {
         System.out.println("\nThe peeked string is " + queue.peek());
+    }
+
+    // Define the PrintQueueSize method to print the size of the queue.
+    static void PrintQueueSize(Queue<String> queue) {
+        System.out.println("\nThe size of queue is " + queue.size());
+    }
+
+    // Define the CheckIfContain method to check the queue if it contains the given object.
+    static void CheckIfCointain(Queue<String> queue, String ifContain) {
+        if (!queue.isEmpty())
+            System.out.println("\nThe queue" + (queue.contains(ifContain) ? " " : " not ") + "contains " + ifContain);
+        else
+            System.out.println("\nThe queue is empty");
     }
 }
