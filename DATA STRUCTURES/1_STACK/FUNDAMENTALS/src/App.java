@@ -14,7 +14,7 @@ public class App {
                     4. CALLING FUNCTIONS (CALL STACK)  */ 
         
         Stack<String> stack = new Stack<String>();
-        // Create a new stack of strings named "stack."
+        // Create a new Stack of strings named "stack."
 
         // Add four strings to the stack using the push() method.
         stack.push("League of Legends");
