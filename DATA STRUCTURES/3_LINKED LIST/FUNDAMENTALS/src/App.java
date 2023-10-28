@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Stack;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -21,6 +22,20 @@ public class App {
                     2. GPS NAVIGATION
                     3. MUSIC PLAYLIST  */ 
 
-        
+        LinkedList<String> linkedList = new LinkedList<String>();
+        // Create a new LinkedList of strings named "linkedList."
+
+        PrintLinkedList(linkedList);
+
+    }
+
+    // Define the PrintLinkedList method to print the contents of the linkedList. It also checks if the linkedList is empty.
+    static void PrintLinkedList(LinkedList<String> linkedList){
+        System.out.println("\nNEW LINKED LIST:");
+
+        if (!linkedList.isEmpty()) 
+            System.out.println(linkedList);
+        else
+            System.out.println("The linkedList is empty");
     }
 }
