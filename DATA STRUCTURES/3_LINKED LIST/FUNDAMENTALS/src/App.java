@@ -24,7 +24,20 @@ public class App {
         LinkedList<String> linkedList = new LinkedList<String>();
         // Create a new LinkedList of strings named "linkedList."
 
-        linkedList.addFirst(("League of Legends"));
+        // LINKED LIST AS A STACK
+        // linkedList.push(("League of Legends"));
+        // linkedList.push("Crossfire");
+        // linkedList.push("Farlight");
+        // linkedList.push("Call of Duty Warzone");
+        // linkedList.pop();
+
+        // LINKED LIST AS A QUEUE
+        // linkedList.offer(("League of Legends"));
+        // linkedList.offer("Crossfire");
+        // linkedList.offer("Farlight");
+        // linkedList.offer("Call of Duty Warzone");
+        // linkedList.poll();
+
 
         // Call the PrintLinkedList method to print the contents of the linkedList.
         PrintLinkedList(linkedList);
