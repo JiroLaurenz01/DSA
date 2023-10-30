@@ -25,19 +25,27 @@ public class App {
         // Create a new LinkedList of strings named "linkedList."
 
         // LINKED LIST AS A STACK
-        // linkedList.push(("League of Legends"));
+        // linkedList.push("League of Legends");
         // linkedList.push("Crossfire");
         // linkedList.push("Farlight");
         // linkedList.push("Call of Duty Warzone");
         // linkedList.pop();
 
         // LINKED LIST AS A QUEUE
-        // linkedList.offer(("League of Legends"));
+        // linkedList.offer("League of Legends");
         // linkedList.offer("Crossfire");
         // linkedList.offer("Farlight");
         // linkedList.offer("Call of Duty Warzone");
         // linkedList.poll();
 
+        // Add four strings to the linkedList using the add() method.
+        linkedList.add("League of Legends");
+        linkedList.add("Crossfire");
+        linkedList.add("Farlight");
+        linkedList.add("Call of Duty Warzone");
+
+        // add string to the linkedList with specific position using index at the add() method.
+        linkedList.add(2, "PUBG");
 
         // Call the PrintLinkedList method to print the contents of the linkedList.
         PrintLinkedList(linkedList);
