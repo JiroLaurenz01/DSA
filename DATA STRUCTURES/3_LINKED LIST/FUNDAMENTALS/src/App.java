@@ -6,6 +6,14 @@ public class App {
         /*  LINKED LIST = NODES ARE IN 2 PARTS (DATA + ADDRESS)
                           NODES ARE IN NON CONSECUTIVE MEMORY LOCATIONS
                           ELEMENTS ARE LINKED USING POINTERS
+
+                               SINGLE LINKED LIST
+                 NODE                NODE                NODE
+            [DATA | ADDRESS] -> [DATA | ADDRESS] -> [DATA | ADDRESS]
+
+                               DOUBLY LINKED LIST
+                       NODE                           NODE  
+            [ADDRESS | DATA | ADDRESS] <-> [ADDRESS | DATA | ADDRESS]                  
             
             ADVANTAGES:
                 1. DYNAMIC DATA STRUCTURE (ALLOCATES NEEDED MEMORY WHILE RUNNING).
