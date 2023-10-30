@@ -50,6 +50,17 @@ public class App {
         // Call the PrintLinkedList method to print the contents of the linkedList.
         PrintLinkedList(linkedList);
 
+        // Call the RemoveAndPrint method to remove the first specific given element from the linkedList and print it.
+        RemoveAndPrint(linkedList, "Crossfire");
+
+        // Call the PrintLinkedList method to print the contents of the linkedList.
+        PrintLinkedList(linkedList);
+
+        // Call the PrintLinkedListSize method to print the size of the linkedList.
+        PrintLinkedListSize(linkedList);
+        
+        // Call the CheckIfContain method to check the linkedList if it contains the given object.
+        CheckIfCointain(linkedList, "Farlight");
     }
 
     // Define the PrintLinkedList method to print the contents of the linkedList. It also checks if the linkedList is empty.
@@ -60,5 +71,28 @@ public class App {
             System.out.println(linkedList);
         else
             System.out.println("The linkedList is empty");
+    }
+
+    // Define the RemoveAndPrint method to remove the first specific element from the linkedList, and then print it.
+    static void RemoveAndPrint(LinkedList<String> linkedList, String toBeRemoved) {
+        boolean removed = linkedList.remove(toBeRemoved);
+        if (removed) {
+            System.out.println("\nThe removed string is " + toBeRemoved);
+        } else {
+            System.out.println("\nThe string '" + toBeRemoved + "' was not found in the linked list.");
+        }
+    }
+
+    // Define the PrintLinkedListSize method to print the size of the linkedList.
+    static void PrintLinkedListSize(LinkedList<String> linkedList) {
+        System.out.println("\nThe size of linkedList is " + linkedList.size());
+    }
+
+    // Define the CheckIfContain method to check the linkedList if it contains the given object.
+    static void CheckIfCointain(LinkedList<String> linkedList, String ifContain) {
+        if (!linkedList.isEmpty())
+            System.out.println("\nThe linkedList" + (linkedList.contains(ifContain) ? " " : " not ") + "contains " + ifContain);
+        else
+            System.out.println("\nThe linkedList is empty");
     }
 }
