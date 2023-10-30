@@ -24,6 +24,8 @@ public class App {
         LinkedList<String> linkedList = new LinkedList<String>();
         // Create a new LinkedList of strings named "linkedList."
 
+        linkedList.addFirst(("League of Legends"));
+
         // Call the PrintLinkedList method to print the contents of the linkedList.
         PrintLinkedList(linkedList);
 
