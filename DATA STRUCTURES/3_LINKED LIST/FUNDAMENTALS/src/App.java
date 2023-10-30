@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -44,8 +45,16 @@ public class App {
         linkedList.add("Farlight");
         linkedList.add("Call of Duty Warzone");
 
-        // add string to the linkedList with specific position using index at the add() method.
+        // Add string to the linkedList with specific position using index at the add() method.
         linkedList.add(2, "PUBG");
+
+        // Add two string to the first and last element of linkedList using the addFirst() and addLast() methods.
+        linkedList.addFirst("Fortnite");
+        linkedList.addLast("Cabal");
+
+        // Remove two string at the first and last element of linkedList using the removeFirst() and removeLast() methods.
+        linkedList.removeFirst();
+        linkedList.removeLast();
 
         // Call the PrintLinkedList method to print the contents of the linkedList.
         PrintLinkedList(linkedList);
@@ -56,9 +65,15 @@ public class App {
         // Call the PrintLinkedList method to print the contents of the linkedList.
         PrintLinkedList(linkedList);
 
+        // Call the PrintFirstElement method to print the first element of the linkedList without removing it.
+        PrintFirstElement(linkedList);
+        
+        // Call the PrintLastElement method to print the last element of the linkedList without removing it.
+        PrintLastElement(linkedList);
+
         // Call the PrintLinkedListSize method to print the size of the linkedList.
         PrintLinkedListSize(linkedList);
-        
+
         // Call the CheckIfContain method to check the linkedList if it contains the given object.
         CheckIfCointain(linkedList, "Farlight");
     }
@@ -71,6 +86,16 @@ public class App {
             System.out.println(linkedList);
         else
             System.out.println("The linkedList is empty");
+    }
+
+    // Define the PrintFirstElement method to print the first element of the linkedList without removing it.
+    static void PrintFirstElement(LinkedList<String> linkedList) {
+        System.out.println("\nThe peeked first string is " + linkedList.peekFirst());
+    }
+
+    // Define the PrintFirstElement method to print the first element of the linkedList without removing it.
+    static void PrintLastElement(LinkedList<String> linkedList) {
+        System.out.println("\nThe peeked last string is " + linkedList.peekLast());
     }
 
     // Define the RemoveAndPrint method to remove the first specific element from the linkedList, and then print it.
