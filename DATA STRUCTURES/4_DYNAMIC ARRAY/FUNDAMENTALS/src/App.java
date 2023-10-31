@@ -19,20 +19,26 @@ public class App {
                 2. CONTACT LISTS
                 3. PLAYLIST MANAGEMENT  */ 
 
+        // Create a new instance of the DynamicArray class.
         DynamicArray dynamicArray = new DynamicArray();
 
+        // Add elements to the dynamic array.
         dynamicArray.add("League of Legends");
         dynamicArray.add("Fortnite");
         dynamicArray.add("Crossfire");
         dynamicArray.add("Farlight");
         dynamicArray.add("Call of Duty Warzone");
 
+        // Insert "Cabal" at index 2 in the dynamic array.
         dynamicArray.insert(2, "Cabal");
 
+        // Delete the element "Fortnite" from the dynamic array.
         dynamicArray.delete("Fortnite");
 
+        // Print the elements in the dynamic array.
         System.out.println(dynamicArray);
 
+        // Search for the index of "Farlight" in the dynamic array and print the result.
         System.out.println("INDEX : " + dynamicArray.search("Farlight"));
     }
 }
