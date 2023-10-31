@@ -27,6 +27,12 @@ public class App {
         dynamicArray.add("Farlight");
         dynamicArray.add("Call of Duty Warzone");
 
+        dynamicArray.insert(2, "Cabal");
+
+        dynamicArray.delete("Fortnite");
+
         System.out.println(dynamicArray);
+
+        System.out.println("INDEX : " + dynamicArray.search("Farlight"));
     }
 }
