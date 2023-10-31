@@ -14,7 +14,11 @@ public class DynamicArray {
     }
 
     public void add(Object data) {
+        if (size >= capacity) {
+            grow();
+        }
 
+        array[size++] = data;
     }
 
     public void insert(int index, Object data) {
@@ -42,7 +46,15 @@ public class DynamicArray {
     }
 
     public String toString() {
-        return null;
+        String string = "[ ";
+
+        for (int i = 0; i < size; i++)
+            string += array[i] + (i + 1 == size ? " ]" : ", ");
+
+        if (string == "")
+            string = "]";
+
+        return string;
     }
 }
 

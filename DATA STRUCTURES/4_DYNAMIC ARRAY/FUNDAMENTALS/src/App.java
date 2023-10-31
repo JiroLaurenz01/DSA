@@ -19,6 +19,14 @@ public class App {
                 2. CONTACT LISTS
                 3. PLAYLIST MANAGEMENT  */ 
 
-        DynamicArray dynamicArray = new DynamicArray();   
+        DynamicArray dynamicArray = new DynamicArray();
+
+        dynamicArray.add("League of Legends");
+        dynamicArray.add("Fortnite");
+        dynamicArray.add("Crossfire");
+        dynamicArray.add("Farlight");
+        dynamicArray.add("Call of Duty Warzone");
+
+        System.out.println(dynamicArray);
     }
 }
