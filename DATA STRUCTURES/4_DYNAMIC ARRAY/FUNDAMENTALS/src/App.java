@@ -19,6 +19,6 @@ public class App {
                 2. CONTACT LISTS
                 3. PLAYLIST MANAGEMENT  */ 
 
-        
+        DynamicArray dynamicArray = new DynamicArray();   
     }
 }
