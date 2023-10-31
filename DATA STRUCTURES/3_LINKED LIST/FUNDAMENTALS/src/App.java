@@ -25,9 +25,9 @@ public class App {
                 3. ACCESSING / SEARCHING ELEMENTS IS MORE TIME CONSUMING. O(n)
 
             USES OF LINKED LIST:
-                    1. IMPLEMENT STACKS / QUEUE
-                    2. GPS NAVIGATION
-                    3. MUSIC PLAYLIST  */ 
+                1. IMPLEMENT STACKS / QUEUE
+                2. GPS NAVIGATION
+                3. MUSIC PLAYLIST  */ 
 
         LinkedList<String> linkedList = new LinkedList<String>();
         // Create a new LinkedList of strings named "linkedList."
