@@ -25,6 +25,8 @@ public class RemoveDuplicates {
 
         // Print the updated array.
         System.out.println("Updated Array: " + Arrays.toString(numbers));
+
+        scanner.close();
     }
 
     // RemoveDuplicate method to remove duplicate elements and return the updated array length.
