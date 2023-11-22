@@ -18,6 +18,8 @@ public class FindDuplicates {
 
         // Call the FindDuplicate method with the entered array.
         FindDuplicate(numbers);
+
+        scanner.close();
     }
 
     // FindDuplicates method to identify and print duplicate elements in the array.
