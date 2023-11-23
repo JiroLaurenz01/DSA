@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class RemoveDuplicates {
     public static void main(String[] args) throws Exception {
-        Scanner scanner = new Scanner(System.in); // Create a Scanner object for user input.
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the number of elements to be input: ");
         int arrayLength = scanner.nextInt();
