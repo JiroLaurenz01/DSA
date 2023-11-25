@@ -16,11 +16,12 @@ public class App {
         Stack<String> stack = new Stack<String>();
         // Create a new Stack of strings named "stack."
 
-        // Add four strings to the stack using the push() method.
+        // Add five strings to the stack using the push() method.
         stack.push("League of Legends");
         stack.push("Crossfire");
         stack.push("Farlight");
         stack.push("Call of Duty Warzone");
+        stack.push("Cabal");
 
         // Call the PrintStack method to print the contents of the stack.
         PrintStack(stack);
