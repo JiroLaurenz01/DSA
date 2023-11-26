@@ -22,6 +22,7 @@ public class App {
         queue.offer("Crossfire");
         queue.offer("Farlight");
         queue.offer("Call of Duty Warzone");
+        queue.offer("Cabal");
 
         // Call the PrintQueue method to print the contents of the stack.
         PrintQueue(queue);
