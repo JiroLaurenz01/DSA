@@ -46,11 +46,12 @@ public class App {
         // linkedList.offer("Call of Duty Warzone");
         // linkedList.poll();
 
-        // Add four strings to the linkedList using the add() method.
+        // Add five strings to the linkedList using the add() method.
         linkedList.add("League of Legends");
         linkedList.add("Crossfire");
         linkedList.add("Farlight");
         linkedList.add("Call of Duty Warzone");
+        linkedList.add("Cabal");
 
         // Add string to the linkedList with specific position using index at the add() method.
         linkedList.add(2, "PUBG");
