@@ -28,6 +28,7 @@ public class App {
         dynamicArray.add("Crossfire");
         dynamicArray.add("Farlight");
         dynamicArray.add("Call of Duty Warzone");
+        dynamicArray.add("Clash of Clans");
 
         // Insert "Cabal" at index 2 in the dynamic array.
         dynamicArray.insert(2, "Cabal");
